@@ -1,6 +1,6 @@
 <template>
-	<div id="app">
-		<router-view></router-view>
+	<div>
+		<h1>admin trainings</h1>
 	</div>
 </template>
 
@@ -14,6 +14,6 @@ export default {
 }
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
 
 </style>
