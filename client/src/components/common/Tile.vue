@@ -35,4 +35,6 @@ export default {
 	.tileBody
 		background-color: $component
 		padding: 0.5rem
+		border-bottom-left-radius: $mainRadius
+		border-bottom-right-radius: $mainRadius
 </style>

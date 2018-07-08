@@ -2,7 +2,7 @@
 	<div id='dashboard'>
 		<header>
 			<div class='headerDiv'>
-				<span @click="logout" class='logOut'>Log Out</span>
+				<span @click='logout' class='logOut'>Log Out</span>
 			</div>
 		</header>
 		<main>
@@ -61,7 +61,6 @@ main
 		flex-direction: column
 section
 	// height: 100px
-	border: 1px solid black
 .calendarPart
 	flex-grow: 2
 	@media (max-width: $breakPoint)
