@@ -6,7 +6,9 @@
 			</div>
 		</header>
 		<main>
-			<section class='profilePart'>profile</section>
+			<section class='profilePart'>
+				<profile></profile>
+			</section>
 			<section class='calendarPart'>calendar</section>
 			<section class='messageBoard'>message</section>
 		</main>
@@ -15,6 +17,12 @@
 </template>
 
 <script>
+import Profile from './DashboardProfile.vue'
+import Notifications from './DashboardNotifications.vue'
+import Calendar from './DashboardCalendar'
+import Workouts from './DashboardPersonalWorkout.vue'
+import Messages from './DashboardMessages.vue'
+
 export default {
 	data () {
 		return {
@@ -25,6 +33,9 @@ export default {
 		logout() {
 			alert("logged out")
 		}
+	},
+	components: {
+		Profile
 	}
 }
 </script>
