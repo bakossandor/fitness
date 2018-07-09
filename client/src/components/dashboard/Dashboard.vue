@@ -8,6 +8,7 @@
 		<main>
 			<section class='profilePart'>
 				<profile></profile>
+				<notifications></notifications>
 			</section>
 			<section class='calendarPart'>calendar</section>
 			<section class='messageBoard'>message</section>
@@ -35,7 +36,8 @@ export default {
 		}
 	},
 	components: {
-		Profile
+		Profile,
+		Notifications
 	}
 }
 </script>

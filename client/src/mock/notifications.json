@@ -1,0 +1,37 @@
+[
+    {
+        "subject": "you assigned for the xy training",
+        "details": "today you signed up for the xy training you can read further details at the trainings tab",
+        "date": "2018-04-04 / 14:00",
+        "type": "system",
+        "id": "00001"
+    },
+    {
+        "subject": "you assigned for the xy training",
+        "details": "today you signed up for the xy training you can read further details at the trainings tab",
+        "date": "2018-04-05 / 16:00",
+        "type": "system",
+        "id": "00002"
+    },
+    {
+        "subject": "you assigned for the xy training",
+        "details": "today you signed up for the xy training you can read further details at the trainings tab",
+        "date": "2018-06-01 / 14:00",
+        "type": "system",
+        "id": "00003"
+    },
+    {
+        "subject": "you assigned for the xy training",
+        "details": "today you signed up for the xy training you can read further details at the trainings tab",
+        "date": "2018-04-04 / 14:55",
+        "type": "system",
+        "id": "00004"
+    },
+    {
+        "subject": "you assigned for the xy training",
+        "details": "today you signed up for the xy training you can read further details at the trainings tab",
+        "date": "2018-04-04 / 14:06",
+        "type": "system",
+        "id": "00005"
+    }
+]
