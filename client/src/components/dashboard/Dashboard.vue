@@ -10,8 +10,13 @@
 				<profile></profile>
 				<notifications></notifications>
 			</section>
-			<section class='calendarPart'>calendar</section>
-			<section class='messageBoard'>message</section>
+			<section class='calendarPart'>
+				<calendar></calendar>
+				<workouts></workouts>
+			</section>
+			<section class='messageBoard'>
+				<messages></messages>
+			</section>
 		</main>
 		<footer></footer>
 	</div>
@@ -37,7 +42,10 @@ export default {
 	},
 	components: {
 		Profile,
-		Notifications
+		Notifications,
+		Messages,
+		Calendar,
+		Workouts
 	}
 }
 </script>

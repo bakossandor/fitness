@@ -1,15 +1,19 @@
 <template>
 	<div>
-		<h1>login</h1>
+		<tile title='Tranining Calendar'></tile>
 	</div>
 </template>
 
 <script>
+import Tile from '../common/Tile.vue'
 export default {
 	data () {
 		return {
 			
 		}
+	},
+	components: {
+		Tile
 	}
 }
 </script>

@@ -18,7 +18,6 @@ export default {
     props: ['notif'],
 	data () {
 		return {
-            notifications: JSON,
             hideBody: true
 		}
 	},
@@ -30,11 +29,9 @@ export default {
 	},
 	methods: {
         expandThisNotif() {
-            console.log(this.hideBody)
             this.hideBody = this.hideBody ? false : true
         },
 		clearThisNotif(event) {
-            console.log(event)
         }
 	}
 }
