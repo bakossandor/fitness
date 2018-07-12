@@ -5,7 +5,7 @@
 				<message v-for='singleMessage in messages' :key='singleMessage.id' :message='singleMessage'></message>
 			</div>
 			<div class="addNewMessage">
-				<input type="text">
+				<textarea type="text" placeholder="type new message"></textarea>
 				<i class="fas fa-share-square fa-lg"></i>
 			</div>
 		</tile>
@@ -33,5 +33,25 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-
+@import '../../assets/base.sass'
+.addNewMessage
+	border: 1px solid black
+	border-radius: $mainRadius
+	padding: $mainRadius
+	display: flex
+	vertical-align: middle
+	
+	textarea
+		display: block
+		width: 100%
+		background-color: $component-tercial
+		border: none
+		border-radius: $subRadius
+		padding-left: 5px
+	textarea:focus
+		 outline:0px !important
+	i
+		margin-left: 5px
+		display: block
+		align-self: center
 </style>

@@ -34,5 +34,25 @@ export default {
 
 <style lang="sass" scoped>
 @import '../../assets/base.sass'
-
+.eachMessage
+    margin-bottom: 5px
+    font-family: $texts
+    background-color: $component-tercial
+    border-radius: $mainRadius
+.messageHeader
+    padding: $mainRadius
+    border-radius: $mainRadius
+    border: 1px solid black
+    background-color: $component
+    i, p
+        display: inline-block
+    .messageHeaderDate
+        float: right
+        font-family: $buttons
+        font-size: 0.7rem
+        margin-top: 3px
+        font-weight: bold 
+.messageBody
+    font-size: 0.8rem
+    padding: 5px   
 </style>
