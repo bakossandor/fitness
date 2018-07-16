@@ -51,7 +51,7 @@ export default {
         font-family: $buttons
         font-size: 0.7rem
         margin-top: 3px
-        font-weight: bold 
+        font-weight: bold
 .messageBody
     font-size: 0.8rem
     padding: 5px   

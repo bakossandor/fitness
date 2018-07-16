@@ -70,17 +70,22 @@ main
 	@media (max-width: $breakPoint)
 		flex-direction: column
 section
-	// height: 100px
+	padding: 0 0.5rem
 .calendarPart
-	flex-grow: 2
+	flex-basis: 40%
 	@media (max-width: $breakPoint)
 		order: 1
+
 .messageBoard, .profilePart
-	flex-grow: 1
+	flex-basis: 30%
 .profilePart
 	@media (max-width: $breakPoint)
 		order: 2
+		margin-top: 0.3rem
+.profilePart > div:first-of-type, .calendarPart > div:first-of-type,
+	margin-bottom: 0.5rem
 .messageBoard
 	@media (max-width: $breakPoint)
 		order: 3
+		margin-top: 0.3rem
 </style>

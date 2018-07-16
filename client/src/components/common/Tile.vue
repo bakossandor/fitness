@@ -1,7 +1,8 @@
 <template>
-	<div class='tile'>
+	<div class='tile' v-bind:class='{expandClass: expandClass}'>
 		<div class='tileHeader'>
             <h2>{{ title }}</h2>
+			<i v-if='!innerWidth' @click='changeView' class='fas fa-expand fa-lg'></i>
         </div>
         <div class='tileBody'>
             <slot></slot>
@@ -14,7 +15,22 @@ export default {
     props: ['title'],
 	data () {
 		return {
-			
+			innerWidth: true,
+			expandClass: false
+		}
+	},
+	created() {
+		const w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+		if (w <= 812) {
+			this.innerWidth = false
+		} else {
+			this.innerWidth = true
+		}
+	},
+	methods: {
+		changeView() {
+			this.expandClass = !this.expandClass;
+			console.log(this.expandClass)
 		}
 	}
 }
@@ -27,14 +43,28 @@ export default {
 		background-color: $alternate
 		border-top-left-radius: $mainRadius
 		border-top-right-radius: $mainRadius
+		position: relative
 		h2
 			font-family: $header
 			text-align: center
 			color: $component
 			letter-spacing: 2.5px
+		i
+			color: $settings
+			position: absolute
+			top: 50%
+			transform: translate(0, -50%)
+			right: 0.5rem
 	.tileBody
 		background-color: $component
 		padding: 0.5rem
 		border-bottom-left-radius: $mainRadius
 		border-bottom-right-radius: $mainRadius
+.expandClass
+	position: absolute
+	top: 0
+	left: 0
+	height: 100vh
+	width: 100%
+	z-index: 100
 </style>
