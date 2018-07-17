@@ -31,6 +31,7 @@ export default {
 
 <style lang="sass">
 	@import './assets/base.sass'
+	@import './assets/calendar.sass'
 	*
 		padding: 0
 		margin: 0
