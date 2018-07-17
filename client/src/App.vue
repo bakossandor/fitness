@@ -10,6 +10,21 @@ export default {
 		return {
 			
 		}
+	},
+	computed: {
+		overflowHiddenBody() {
+			return this.$store.state.overflowHiddenBody;
+		}
+	},
+	watch: {
+		overflowHiddenBody(newState) {
+			if (newState) {
+				document.body.classList.add('overflowHiddenBody');
+				window.scrollTo(0, 0)
+			} else {
+				document.body.classList.remove('overflowHiddenBody');
+			}
+		}
 	}
 }
 </script>
@@ -22,5 +37,6 @@ export default {
 		box-sizing: border-box
 	body, html
 		background-color: $base
-	
+	.overflowHiddenBody
+		overflow: hidden
 </style>

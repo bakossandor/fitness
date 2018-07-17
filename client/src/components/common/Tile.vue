@@ -1,5 +1,5 @@
 <template>
-	<div class='tile' v-bind:class='{expandClass: expandClass}'>
+	<div class='tile' :class='{expandClass: expandClass}'>
 		<div class='tileHeader'>
             <h2>{{ title }}</h2>
 			<i v-if='!innerWidth' @click='changeView' class='fas fa-expand fa-lg'></i>
@@ -30,9 +30,11 @@ export default {
 	methods: {
 		changeView() {
 			this.expandClass = !this.expandClass;
-			console.log(this.expandClass)
+			this.$store.state.overflowHiddenBody = !this.$store.state.overflowHiddenBody;
+			console.log(this.$store)
+			console.log(this)
 		}
-	}
+	},
 }
 </script>
 
@@ -60,6 +62,8 @@ export default {
 		padding: 0.5rem
 		border-bottom-left-radius: $mainRadius
 		border-bottom-right-radius: $mainRadius
+		position: relative
+		height: 100%
 .expandClass
 	position: absolute
 	top: 0
@@ -67,4 +71,5 @@ export default {
 	height: 100vh
 	width: 100%
 	z-index: 100
+	background-color: $component
 </style>

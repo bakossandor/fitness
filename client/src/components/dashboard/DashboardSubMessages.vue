@@ -2,7 +2,7 @@
 	<div>
         <div class='eachMessage'>
             <div class='messageHeader'>
-                <i class="fas fa-user-alt fa-lg"></i>
+                <i class="fas fa-user-alt"></i>
                 <p>{{ message.issuer }}</p>
                 <p class='messageHeaderDate'>{{ message.dateTime }}</p>
             </div>
@@ -44,6 +44,7 @@ export default {
     border-radius: $mainRadius
     border: 1px solid black
     background-color: $component
+    font-size: 0.8rem
     i, p
         display: inline-block
     .messageHeaderDate

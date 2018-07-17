@@ -1,10 +1,10 @@
 <template>
 	<div class='messageBoard'>
 		<tile title='Message Board'>
-			<div class="messagesContainer">
+			<div class="messagesContainer" :class='{mobileExpandedInnerContainer: overflowHiddenBody}'>
 				<message v-for='singleMessage in messages' :key='singleMessage.id' :message='singleMessage'></message>
 			</div>
-			<div class="addNewMessage">
+			<div class="addNewMessage" :class='{mobileExpandedType: overflowHiddenBody}'>
 				<textarea type="text" placeholder="type new message"></textarea>
 				<i class="fas fa-share-square fa-lg"></i>
 			</div>
@@ -28,19 +28,26 @@ export default {
 	},
 	created() {
 		console.log("messages :", this.messages)
+	},
+	computed: {
+		overflowHiddenBody() {
+			return this.$store.state.overflowHiddenBody;
+		}
 	}
 }
 </script>
 
 <style lang="sass" scoped>
 @import '../../assets/base.sass'
+.messagesContainer
+	height: 75vh
+	overflow: auto
 .addNewMessage
 	border: 1px solid black
 	border-radius: $mainRadius
 	padding: $mainRadius
 	display: flex
 	vertical-align: middle
-	
 	textarea
 		display: block
 		width: 100%
@@ -54,4 +61,11 @@ export default {
 		margin-left: 5px
 		display: block
 		align-self: center
+.mobileExpandedType
+	position: fixed
+	bottom: 5px
+	width: 95%
+.mobileExpandedInnerContainer
+	height: 85%
+	overflow: auto
 </style>
