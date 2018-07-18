@@ -1,0 +1,45 @@
+[
+    {
+        "firstName": "Sándor",
+        "lastName": "Bakos",
+        "email": "bakos@gmail.com",
+        "registerTime": "20140506",
+        "lastLoginDateTime": "20140506 / 0415",
+        "completedtrainings": 2,
+        "completedTrainingsId": [
+            "11", "12"
+        ],
+        "missedTrainings": 1,
+        "missedTraningsId": [
+            "13"
+        ]
+    },
+    {
+        "firstName": "Sándor",
+        "lastName": "Bakos",
+        "email": "bakos@gmail.com",
+        "registerTime": "20140506",
+        "lastLoginDateTime": "20140506 / 0415",
+        "completedtrainings": 3,
+        "completedTrainingsId": [
+            "11", "12", "15"
+        ],
+        "missedTrainings": 1,
+        "missedTraningsId": [
+            "13"
+        ]
+    },
+    {
+        "firstName": "Kitti",
+        "lastName": "Pásztler",
+        "email": "kitti@gmail.com",
+        "registerTime": "20140506",
+        "lastLoginDateTime": "20140506 / 0415",
+        "completedtrainings": 2,
+        "completedTrainingsId": [
+            "11", "12"
+        ],
+        "missedTrainings": 0,
+        "missedTraningsId": []
+    }
+]
