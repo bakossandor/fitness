@@ -31,8 +31,6 @@ export default {
 		changeView() {
 			this.expandClass = !this.expandClass;
 			this.$store.state.overflowHiddenBody = !this.$store.state.overflowHiddenBody;
-			console.log(this.$store)
-			console.log(this)
 		}
 	},
 }

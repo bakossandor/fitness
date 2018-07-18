@@ -1,15 +1,20 @@
 <template>
 	<div>
+		<admin-header></admin-header>
 		<h1>adminusers</h1>
 	</div>
 </template>
 
 <script>
+import AdminHeader from './AdminHeader.vue'
 export default {
 	data () {
 		return {
 			
 		}
+	},
+	components: {
+		AdminHeader
 	}
 }
 </script>
