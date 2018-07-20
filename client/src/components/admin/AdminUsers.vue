@@ -58,4 +58,8 @@ export default {
 
 <style lang="sass" scoped>
 @import '~vue-good-table/dist/vue-good-table.css'
+@import '../../assets/base.sass'
+.adminUsersTable
+	padding: $mainRadius
+	font-family: $texts
 </style>
